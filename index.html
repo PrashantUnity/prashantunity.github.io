@@ -4,19 +4,21 @@
   <meta charset="UTF-8">
   <title>My Linktree</title>
   <style>
+    .*{
+      background: linear-gradient(to bottom right, #91ac76, #0b8353);
+    }
     body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(to bottom right, #ff8a00, #e52e71);
-  }
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom right, #91ac76, #0b8353);
+    }
     .container {
-      max-width: 600px;
-      margin: 20px auto;
-      padding: 20px; 
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      background: linear-gradient(to bottom right, #ff8a00, #e52e71);
+      width: 100%;
+      padding: 20px;
+      box-sizing: border-box;
       text-align: center;
+      background: linear-gradient(to bottom right, #91ac76, #0b8353);
     }
     .profile-img {
       width: 150px;
@@ -26,23 +28,25 @@
     }
     .link {
       display: block;
-      padding: 15px;
-      margin-bottom: 10px;
-      background: linear-gradient(to bottom right, #f4a460, #d2691e);
+      padding: 15px; 
+      max-width: 500px;
+      background: linear-gradient(to bottom right, #a5be8c, #16885a);
       text-decoration: none;
       color: #333;
       border-radius: 5px;
+      margin: 10px auto; /* Center the links horizontally */
     }
-    .link:hover { 
-       background: linear-gradient(to bottom right, #f4a460, #d2691e);
+    .link img {
+      width: auto;
+      height: 80px; /* Set the height of the image */
+      margin-right: 10px; /* Spacing between image and text */
+      border-radius: 50%;
     }
-     /* Media Query for Responsive Design */
+    .link:hover {
+      background: linear-gradient(to bottom right, rgb(116, 170, 124), rgb(44, 26, 13));
+    }
+    /* Media Query for Responsive Design */
     @media only screen and (max-width: 600px) {
-      .container {
-        max-width: 90%; /* Adjust as needed for smaller screens */
-        margin: 10px auto;
-        padding: 10px;
-      }
       .profile-img {
         width: 100px;
         height: 100px;
@@ -57,19 +61,23 @@
   </style>
 </head>
 <body>
-  <div class="container"> 
-    <img class="profile-img" src="prashant.jpg" alt="Profile Picture">
-    <h1>Prashant Priyadarshi</h1>
-    <h2>painting gaming coding</h2>
-    <a class="link" href="https://github.com/PrashantUnity">GitHub Account</a>
-    <a class="link" href="https://www.linkedin.com/in/prashantunity">Linkedin Account</a> 
-    <a class="link" href="https://learn.microsoft.com/en-us/users/prashantunity/">Microsoft Account</a>
-    <a class="link" href="https://ambitious-sky-02a3c1e10.3.azurestaticapps.net/">Prashant Priyadarshi</a>
-    <a class="link" href="https://prashantunity.github.io/GettingStarted/">Data Structure And Stuff</a> 
-    <a class="link" href="https://play.unity.com/u/PrashantUnitys">Unity Engine Account</a>
-    <a class="link" href="https://github.com/PrashantUnity/SomeCoolScripts">Some Cool Scripts</a>
-    <a class="link" href="https://github.com/PrashantUnity/OracleSqlWizard">Oracle Metabackup Tools</a>
-    <a class="link" href="https://play.google.com/store/apps/dev?id=7629538091711147079">Google Playstore Developer Account</a> 
-  </div>
+<div class="container">
+  <img class="profile-img" src="prashant.jpg" alt="Profile Picture">
+  <h1>Prashant Priyadarshi</h1>
+  <h2>painting gaming coding</h2>
+  <!-- <a class="link" href="https://github.com/PrashantUnity">
+    <img src="prashant.jpg" alt="GitHub Icon">
+    <div>GitHub Account</div>
+  </a> -->
+  <a class="link" href="https://github.com/PrashantUnity">GitHub Account</a>
+  <a class="link" href="https://www.linkedin.com/in/prashantunity">Linkedin Account</a>
+  <a class="link" href="https://learn.microsoft.com/en-us/users/prashantunity/">Microsoft Account</a>
+  <a class="link" href="https://ambitious-sky-02a3c1e10.3.azurestaticapps.net/">Prashant Priyadarshi</a>
+  <a class="link" href="https://prashantunity.github.io/GettingStarted/">Data Structure And Stuff</a>
+  <a class="link" href="https://play.unity.com/u/PrashantUnitys">Unity Engine Account</a>
+  <a class="link" href="https://github.com/PrashantUnity/SomeCoolScripts">Some Cool Scripts</a>
+  <a class="link" href="https://github.com/PrashantUnity/OracleSqlWizard">Oracle Metabackup Tools</a>
+  <a class="link" href="https://play.google.com/store/apps/dev?id=7629538091711147079">Google Playstore Developer Account</a>
+</div>
 </body>
 </html>
